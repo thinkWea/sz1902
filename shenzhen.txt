@@ -2,3 +2,10 @@ hello world!!!
 how are you?
 fine thinks and you.
 if you want something to eat you can call me.
+$("#toRight").hover(function(){
+        $(this).addClass("hov1");
+        clearInterval(timer);
+    },function(){
+        $(this).removeClass("hov1");
+        timer = setInterval(autoPlay,3000);
+})
